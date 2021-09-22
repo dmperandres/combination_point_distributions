@@ -1,0 +1,19 @@
+//LIC
+
+#ifndef DATA_DOTS_EBG_EXT_H
+#define DATA_DOTS_EBG_EXT_H
+
+#define LOAD_DOTS_EBG_EXT
+
+namespace _dots_ebg_ext_ns
+{
+  enum class _output_size:unsigned char {_OUTPUT_SIZE_OPTIMAL,_OUTPUT_SIZE_A4,_OUTPUT_SIZE_A5,_OUTPUT_SIZE_A6,_OUTPUT_SIZE_A7, _OUTPUT_SIZE_A8,_OUTPUT_SIZE_A9,_OUTPUT_SIZE_A10};
+  typedef enum {PIXEL_DENSITY_300PPI,PIXEL_DENSITY_600PPI,PIXEL_DENSITY_1200PPI,PIXEL_DENSITY_LAST} _pixel_density;
+  typedef enum {PAPER_COLD_PRESS,PAPER_MEDIUM_PRESS,PAPER_HOT_PRESS,PAPER_LAST} _paper_type;
+  typedef enum {TIP_013,TIP_020,TIP_050,TIP_LAST} _tip_size;
+  typedef enum {OUTPUT_MODE_GRAYSCALE,OUTPUT_MODE_MONO_COLOR,OUTPUT_MODE_COLORIZED,OUTPUT_MODE_LAST} _output_mode;
+
+  const unsigned short MIN_DOT_SIZE=4;
+  const unsigned short MAX_DOT_SIZE=8;
+}
+#endif
